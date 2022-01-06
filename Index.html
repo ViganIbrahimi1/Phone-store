@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo-search">
+                        <div class="logo">
+                            <img src="Images/Logo.jpg" alt="">
+                        </div>
+                        <div class="search">
+                            <input type="text" placeholder="Phone search...">
+                            <button>Search</button>
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <ul id="ul">
+                            <li class="uppercase"><a href="Index.html">Home</a></li>
+                            <li class="uppercase"><a href="About.html">About</a></li>
+                            <li class="uppercase"><a href="Login.html">Login</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="Images/Slide1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/Slide2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="Images/Slide3.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+        <section id="store">
+            <div class="store-controls">
+                <h2 class="large-text">Our Store</h2>
+                <div class="button-div">
+                    <button class="btn btn-med">Iphone 13 Pro Max</button>
+                    <button class="btn btn-med">Iphone 13</button>
+                </div>
+            </div>
+            <div class="cards-div">
+                <div class="card pro">
+                    <img src="Images/iphone-13-pro-max-blue-select.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 pro max blue</h4>
+                        <p>$1499</p>
+                    </div>
+                </div>
+                <div class="card pro">
+                    <img src="Images/iphone-13-pro-max-graphite-select.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 pro max graphite</h4>
+                        <p>$1499</p>
+                    </div>
+                </div>
+                <div class="card normal">
+                    <img src="Images/iphone-13-pro-max-silver-select.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 pro max silver</h4>
+                        <p>$1499</p>
+                    </div>
+                </div>
+                <div class="card normal">
+                    <img src="Images/iphone-13-pro-max-gold-select.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 pro max gold</h4>
+                        <p>$1499</p>
+                    </div>
+                </div>
+                <div class="card normal">
+                    <img src="Images/iphone-13-blue-select-2021.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 blue</h4>
+                        <p>$999</p>
+                    </div>
+                </div>
+                <div class="card normal">
+                    <img src="Images/iphone-13-midnight-select-2021.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 midnight</h4>
+                        <p>$999</p>
+                    </div>
+                </div>
+                <div class="card normal">
+                    <img src="Images/iphone-13-pink-select-2021.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 pink</h4>
+                        <p>$999</p>
+                    </div>
+                </div>
+                <div class="card normal">
+                    <img src="Images/iphone-13-product-red-select-2021.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 product-red</h4>
+                        <p>$999</p>
+                    </div>
+                </div>
+                <div class="card normal">
+                    <img src="Images/iphone-13-starlight-select-2021.png" alt="">
+                    <div class="card-caption">
+                        <h4>iphone 13 starlight</h4>
+                        <p>$999</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="footer-main">
+                    <div class="footer-div">
+                        <img src="Images/Logo.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+                    </div>
+                    <div class="footer-div">
+                        <h3>Custom Services</h3>
+                        <p>Home</p>
+                        <p>Iphone Grid</p>
+                        <p>Iphone List</p>
+                    </div>
+                    <div class="footer-div">
+                        <h3>Recent Post</h3>                  
+                        <p>jan 1, 2022</p>
+                        <p>Iphone 13 pro max best phone of 2021</p>
+                    </div>
+                    <div class="footer-div">
+                        <h3>Contact Us</h3>
+                        <p>9067 Zurich, Switzerland 87</p>
+                        <p>abc@gmail.com</p>
+                        <p><span class="orange">01-234-5678</span></p>
+                        <p>jan 1, 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>©copyright 2016 apple</p>
+            </div>
+        </footer>
+        <script src="Script.js"></script>
+    </body>
+</html>

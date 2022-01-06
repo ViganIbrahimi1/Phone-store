@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="StyleLogin.css">
+</head>
+
+<body>
+  <script> 
+  
+    
+function SignUp() {
+  document.getElementById("signup").style.display = "block";
+  document.getElementById("formFooter").style.display = "none";
+  document.getElementById("signin").style.display = "none";
+
+  document.getElementById("button1").classList.add('inactive');
+  document.getElementById("button1").classList.add('underlineHover');
+  document.getElementById("button1").classList.remove('active');
+
+  document.getElementById("button2").classList.remove('inactive');
+  document.getElementById("button2").classList.remove('underlineHover');
+  document.getElementById("button2").classList.add('active');
+}
+
+function SignIn() {
+  document.getElementById("signup").style.display = "none";
+  document.getElementById("formFooter").style.display = "block";
+  document.getElementById("signin").style.display = "block";
+
+  document.getElementById("button1").classList.add('active');
+  document.getElementById("button1").classList.remove('underlineHover');
+  document.getElementById("button1").classList.remove('inactive');
+
+  document.getElementById("button2").classList.remove('active');
+  document.getElementById("button2").classList.add('underlineHover');
+  document.getElementById("button2").classList.add('inactive');
+}
+
+  
+    function validateLoginform(){  
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;  
+      
+    if (name==null || name==""){  
+      alert("Name can't be blank");  
+      return false;  
+    }else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      }  
+    }  
+    function validatePassword(){  
+    var firstpassword=document.myform2.password.value;  
+    var secondpassword=document.myform2.password2.value;  
+      
+    if(firstpassword==secondpassword){  
+    return true;  
+    }  
+    else{  
+    alert("Password must be the same!");  
+    return false;  
+    }  
+    }  
+
+    </script>  
+
+  <div class="wrapper">
+    <div id="formContent">
+      <h2 id="button1" class="active" onclick="SignIn()"> Sign In </h2>
+      <h2 id="button2" class="inactive underlineHover" onclick="SignUp()">Sign Up </h2>
+      <form id="signup" name="myform2"class="signup" onsubmit="validatePassword()">
+        <input type="text" id="login"  name="name" placeholder="Username" required>
+        <input type="text" id="password"  name="password" placeholder="Password" required>
+        <input type="text" id="password"  name="password2" placeholder="Confirm password" required>
+        <input type="email" id="email" name="email" placeholder="Enter email" required/>
+        <input id="number" type="number" name="age" placeholder="Age" value="" required>
+        <br>
+        <div id="gender">
+          <input type="radio" name="gender" value="male" required>Male
+          <input type="radio" name="gender" value="female" required> Female
+        </div>
+        <br>
+        <input id="submit" type="submit"  value="SIGN UP">
+      </form>
+      <form id="signin" name="myform" method="post" onsubmit="return validateLoginform()">
+        <input type="text" id="login1" name="name" placeholder="Username">
+        <input type="text" id="password1"  name="password" placeholder="Password">
+        <input type="submit"  value="LOG IN">
+      </form>
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
